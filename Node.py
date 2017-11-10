@@ -2,8 +2,8 @@ from Person import Person
 
 class Node():
 
-    def __init__(self, object: object):
-        self.record: object = object
+    def __init__(self, object):
+        self.record = object
         self.next: Node = None
         self.previous: Node = None
 
@@ -25,7 +25,7 @@ class Node():
     def havePrevious(self):
         return self.previous != None
 
-    def setRecord(self, object: object):
+    def setRecord(self, object):
         self.record = object
 
     def getRecord(self):

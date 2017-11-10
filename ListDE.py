@@ -22,7 +22,7 @@ class ListDE():
             return True
         return False
 
-    def append(self, object: object):
+    def append(self, object):
 
         if(self.head == None):
             self.head = Node(object)
@@ -34,7 +34,7 @@ class ListDE():
         temp.setNext(Node(object))
         temp.getNext().setPrevious(temp)
 
-    def remove(self, object: object):
+    def remove(self, object):
 
         if(self.head == None):
             return
@@ -60,7 +60,7 @@ class ListDE():
     def clear(self):
         self.head = None
 
-    def insert(self, index: object, object: object):
+    def insert(self, index, object):
 
         if(index is None or object is None):
             return
@@ -77,7 +77,7 @@ class ListDE():
             temp.setNext(newObject)
             temp.getNext().setPrevious(temp)
 
-    def getObject(self, object: object) -> object:
+    def getObject(self, object):
 
         if(self.head == None):
             return None
